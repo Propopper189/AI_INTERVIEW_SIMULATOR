@@ -24,21 +24,23 @@ npm run dev
 # runs on http://localhost:3000
 🔗 API Endpoints
 POST /generate
+Request:
 
 json
 Copy code
 { "job_role": "Software Engineer", "job_description": "Build APIs" }
-→
+Response:
 
 json
 Copy code
 { "questions": ["Q1 ...", "Q2 ..."] }
 POST /score
+Request:
 
 json
 Copy code
 { "question": "Explain OOP", "answer": "Object-oriented programming..." }
-→
+Response:
 
 json
 Copy code
