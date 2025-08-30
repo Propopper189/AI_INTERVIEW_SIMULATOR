@@ -27,7 +27,7 @@ POST /generate
 Request:
 
 json
-Copy code
+
 { "job_role": "Software Engineer", "job_description": "Build APIs" }
 Response:
 
