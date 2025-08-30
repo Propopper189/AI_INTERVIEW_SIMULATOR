@@ -20,7 +20,8 @@ npm install
 npm run dev
 ```
 runs on http://localhost:3000
-##🔗 API Examples
+
+## 🔗 **API Examples**
 
 **Request – Generate Questions**
 ```
