@@ -5,24 +5,6 @@ It contains a **Flask backend** (Python + OpenAI API) and a **Next.js frontend**
 
 ---
 
-## 📂 Folder Structure  
-
-0001_AI-Interview-Simulator/
-│── app/ # Flask backend package
-│ ├── init.py
-│ ├── simulator.py
-│ ├── api/ # API routes
-│── nextjs-app.zip # Frontend (unzip before use)
-│── run.py # Backend entry point
-│── requirements.txt # Python dependencies
-│── .env.example # Example env file
-│── README.md # This file
-
-yaml
-Copy code
-
----
-
 ## 👥 Project Info  
 
 - **Team Name**: Lassiii Coder  
@@ -47,7 +29,7 @@ pip install -r requirements.txt
 Configure environment
 Copy .env.example → .env
 
-Add your own OpenAI API key (⚠️ each user must create their own key at https://platform.openai.com)
+Add your own OpenAI API key (⚠️ each user must create their own key at OpenAI)
 
 env
 Copy code
@@ -56,7 +38,7 @@ Run backend
 bash
 Copy code
 python run.py
-The backend runs at http://localhost:5000
+Backend runs at http://localhost:5000
 
 🔹 2. Frontend (Next.js)
 Unzip
@@ -101,15 +83,3 @@ Copy code
   "feedback": ["Good explanation", "Covered examples"],
   "improvements": ["Add more real-world use cases"]
 }
-✅ Submission Checklist
- Flask backend in app/
-
- Next.js frontend zipped (nextjs-app.zip)
-
- requirements.txt for backend
-
- .env.example for environment variables
-
- README.md with instructions
-
-🚀 Team: Lassiii Coder – Happy Hacking!
