@@ -1,85 +1,45 @@
 # 🚀 AI Interview Simulator  
 
-This project is built for **OpenxAI Global AI Accelerator Hackathon 2025**.  
-It contains a **Flask backend** (Python + OpenAI API) and a **Next.js frontend** (provided as a zip file in root).  
+Built for **OpenxAI Global AI Accelerator Hackathon 2025** by **Team Lassiii Coder**.  
+A tool that generates interview questions, scores answers with feedback, and helps users improve.  
 
 ---
 
-## 👥 Project Info  
+## ⚙️ Setup  
 
-- **Team Name**: Lassiii Coder  
-- **Project Name**: AI Interview Simulator  
-- **Description**:  
-  An AI-powered interview preparation tool that:  
-  - Generates professional interview questions  
-  - Scores candidate answers with constructive feedback  
-  - Encourages learners with tips for improvement  
-
-- **Track**: AI + Productivity  
-
----
-
-## ⚙️ Getting Started  
-
-### 🔹 1. Backend (Flask API)  
-
-#### Install dependencies  
+### Backend (Flask)  
 ```bash
 pip install -r requirements.txt
-Configure environment
-Copy .env.example → .env
-
-Add your own OpenAI API key (⚠️ each user must create their own key at OpenAI)
-
-env
-Copy code
-OPENAI_API_KEY=your_api_key_here
-Run backend
-bash
-Copy code
+cp .env.example .env
+# add your OpenAI API key inside .env
 python run.py
-Backend runs at http://localhost:5000
-
-🔹 2. Frontend (Next.js)
-Unzip
+# runs on http://localhost:5000
+Frontend (Next.js)
 bash
 Copy code
 unzip nextjs-app.zip -d nextjs-app
 cd nextjs-app
-Install dependencies
-bash
-Copy code
 npm install
-Run frontend
-bash
-Copy code
 npm run dev
-Frontend runs at http://localhost:3000
-
+# runs on http://localhost:3000
 🔗 API Endpoints
 POST /generate
-Request body:
 
 json
 Copy code
 { "job_role": "Software Engineer", "job_description": "Build APIs" }
-Response:
+→
 
 json
 Copy code
 { "questions": ["Q1 ...", "Q2 ..."] }
 POST /score
-Request body:
 
 json
 Copy code
 { "question": "Explain OOP", "answer": "Object-oriented programming..." }
-Response:
+→
 
 json
 Copy code
-{
-  "score": 8,
-  "feedback": ["Good explanation", "Covered examples"],
-  "improvements": ["Add more real-world use cases"]
-}
+{ "score": 8, "feedback": ["Good explanation"], "improvements": ["Add more real-world use cases"] }
