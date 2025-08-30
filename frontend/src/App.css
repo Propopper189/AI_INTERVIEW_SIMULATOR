@@ -1,0 +1,44 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.input-section input,
+.input-section textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.question-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.question-card textarea {
+  width: 100%;
+  min-height: 60px;
+  margin-top: 5px;
+}
+
+.question-card button {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+.result {
+  margin-top: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
