@@ -13,29 +13,29 @@ cp .env.example .env
 python run.py
 # runs on http://localhost:5000
 ```
-⚙️ Frontend Setup (Next.js)
-unzip nextjs-app.zip -d nextjs-app
+##⚙️ Frontend Setup (Next.js)
+**unzip nextjs-app.zip -d nextjs-app**
 ```cd nextjs-app
 npm install
 npm run dev
 ```
-# runs on http://localhost:3000
-🔗 API Examples
+runs on http://localhost:3000
+##🔗 API Examples
 
-Request – Generate Questions
+**Request – Generate Questions**
 ```
 { "job_role": "Software Engineer", "job_description": "Build APIs" }
 ```
-Response
+**Response**
 ```
 { "questions": ["Q1 ...", "Q2 ..."] }
 ```
 
-Request – Score Answer
+**Request – Score Answer**
 ```
 { "question": "Explain OOP", "answer": "Object-oriented programming..." }
 ```
-Response
+**Response**
 ```
 {
   "score": 8,
@@ -43,6 +43,8 @@ Response
   "improvements": ["Add more real-world use cases"]
 }
 ```
+```
   "feedback": ["Good explanation"],
   "improvements": ["Add more real-world use cases"]
 }
+```
