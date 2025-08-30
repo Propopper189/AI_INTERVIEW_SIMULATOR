@@ -13,7 +13,7 @@ cp .env.example .env
 python run.py
 # runs on http://localhost:5000
 ```
-##⚙️ **Frontend Setup (Next.js)**
+## ⚙️ **Frontend Setup (Next.js)**
 **unzip nextjs-app.zip -d nextjs-app**
 ```cd nextjs-app
 npm install
